@@ -1,5 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
 
+import sphinx_pdj_theme
+
 # -- Project information
 
 project = 'IP2Location'
@@ -35,9 +37,11 @@ templates_path = ['_templates']
 # html_theme = 'sphinx_rtd_theme'
 # html_theme = 'press'
 # html_theme = 'sphinx_material'
-html_theme = 'sphinx_book_theme' #Sphinx ver 6.2.1
+# html_theme = 'sphinx_book_theme' #Sphinx ver 6.2.1
 # html_theme = 'furo'
 # html_theme = 'renku'
+html_theme = 'sphinx_pdj_theme'
+html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
 
 '''
 # Material theme options (see theme.conf for more information)
