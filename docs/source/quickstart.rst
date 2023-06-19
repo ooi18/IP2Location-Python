@@ -17,6 +17,7 @@ or
 
 To install this module type the following (for PyPI):
 
-```bash
-pip install IP2Location
-```
+::
+
+   pip install IP2Location
+
