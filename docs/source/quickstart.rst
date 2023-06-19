@@ -1,6 +1,18 @@
 Quickstart
 ==========
 
+Dependencies
+------------
+
+This library requires IP2Location BIN data file to function. You may download the BIN data file at
+
++ IP2Location LITE BIN Data (Free): https://lite.ip2location.com
++ IP2Location Commercial BIN Data (Comprehensive): https://www.ip2location.com
+
+An outdated BIN database was provided in the databases folder for your testing. You are recommended to visit the above links to download the latest BIN database.
+
+You can also sign up for IP2Location Web Service to lookup by IP2Location API.
+
 Requirements
 ------------
 
@@ -27,6 +39,8 @@ Sample Codes
 
 Query geolocation information from BIN database
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can query the geolocation information from the IP2Location BIN database as below:
 
 .. code:: python
 
@@ -74,6 +88,8 @@ Query geolocation information from BIN database
 Query geolocation information from web service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+You can query geolocation information from IP2Location web service as below:
+
 .. code:: python
 
 	import IP2Location
@@ -86,6 +102,8 @@ Query geolocation information from web service
 
 Processing IP address using IP Tools class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can manupulate IP address, IP number and CIDR as below:
 
 .. code:: python
 
@@ -108,6 +126,8 @@ Processing IP address using IP Tools class
 List down country information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+You can query country information for a country from IP2Location Country Information CSV file as below:
+
 .. code:: python
 
 	import os
@@ -120,6 +140,8 @@ List down country information
 
 List down region information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can get the region code by country code and region name from IP2Location ISO 3166-2 Subdivision Code CSV file as below:
 
 .. code:: python
 

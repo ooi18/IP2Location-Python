@@ -13,3 +13,4 @@ Table of contents
 
     self
     quickstart
+    code
