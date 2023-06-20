@@ -16,10 +16,29 @@ version = '0.1.0'
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
+    # 'sphinx.ext.autodoc',
+    # 'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    # 'myst_parser',
+    'myst_parser',
+]
+
+# https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
+
+myst_enable_extensions = [
+    # "amsmath",
+    # "attrs_inline",
+    # "colon_fence",
+    "deflist",
+    # "dollarmath",
+    # "fieldlist",
+    # "html_admonition",
+    # "html_image",
+    # "linkify",
+    # "replacements",
+    # "smartquotes",
+    # "strikethrough",
+    # "substitution",
+    # "tasklist",
 ]
 
 intersphinx_mapping = {
@@ -28,7 +47,7 @@ intersphinx_mapping = {
 }
 intersphinx_disabled_domains = ['std']
 
-autosummary_generate = True  # Turn on sphinx.ext.autosummary
+# autosummary_generate = True  # Turn on sphinx.ext.autosummary
 
 templates_path = ['_templates']
 
