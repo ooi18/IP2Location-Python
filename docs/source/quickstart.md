@@ -10,12 +10,7 @@ download the BIN data file at
     <https://www.ip2location.com>
 
 :::{note}
-An outdated BIN database was provided in the databases folder for your
-testing. You are recommended to visit the above links to download the
-latest BIN database.
-
-You can also sign up for IP2Location Web Service to lookup by
-IP2Location API.
+An outdated BIN database was provided in the databases folder for your testing. You are recommended to visit the above links to download the latest BIN database.
 :::
 
 ## Requirements
@@ -84,20 +79,6 @@ print("District              : " + rec.district)
 print("ASN                   : " + rec.asn)
 print("AS                    : " + rec.as_name)
 print("\nYou may download the DB26 sample BIN at http://www.ip2location.com/downloads/sample6.bin.db26.zip for full data display.")
-```
-
-### Query geolocation information from web service
-
-You can query geolocation information from IP2Location web service as
-below:
-
-``` python
-import IP2Location
-ws = IP2Location.IP2LocationWebService("PASTE_API_KEY_HERE","WS25",True)
-rec = ws.lookup("8.8.8.8", ["continent", "country", "region", "city", "geotargeting", "country_groupings", "time_zone_info"], "en")
-print (rec)
-print ("\n")
-print ("Credit Remaining: {}\n".format(ws.getcredit()))
 ```
 
 ### Processing IP address using IP Tools class

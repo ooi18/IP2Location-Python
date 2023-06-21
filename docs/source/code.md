@@ -47,63 +47,6 @@ Retrieve geolocation information for an IP address.
 | as_name          |     Autonomous system (AS) name. |
 ```
 
-## IP2LocationWebService Class
-
-```{py:class} IP2LocationWebService(IP2Location_api_key, package_name, use_ssl)
-Initiate the IP2LocationWebService class and cofigure the variables.
-
-:param str IP2Location_api_key: (Required) [IP2Location Web Service](https://www.ip2location.com/web-service/ip2location) API key.
-:param str package_name: (Required) Web service package of different granularity of return information. Avaliable from WS1 to WS25.
-:param boolean use_ssl: (Optional) Use HTTPS or HTTP. Default is True.
-```
-
-```{py:function} lookup(ip_address, addon, lang)
-Return the IP information for an IP address.
-
-:param str ip_address: (Required) IP address (IPv4 or IPv6) for reverse IP location lookup purposes.
-:param dict addon: (Optional) Extra information in addition to the above-selected package. Valid value: continent, country, region, city, geotargeting, country_groupings, time_zone_info.
-:param str lang: (Optional) Translation information. The translation is only applicable for continent, country, region and city name for the addon package.
-:return: Returns the IP information in dict. Refer below table for the fields avaliable in the dict
-:rtype: dict
-
-**RETURN FIELDS**
-
-| Field Name       | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
-| country_short    |     Two-character country code based on ISO 3166. |
-| country_long     |     Country name based on ISO 3166. |
-| region           |     Region or state name. |
-| city             |     City name. |
-| isp              |     Internet Service Provider or company\'s name. |
-| latitude         |     City latitude. Defaults to capital city latitude if city is unknown. |
-| longitude        |     City longitude. Defaults to capital city longitude if city is unknown. |
-| domain           |     Internet domain name associated with IP address range. |
-| zipcode          |     ZIP/Postal code ([172 countries supported](https://www.ip2location.com/zip-code-coverage) ). |
-| timezone         |     UTC time zone (with DST supported). |
-| netspeed         |     Internet connection type. |
-| domain           |     Internet domain name associated with IP address range. |
-| idd_code         |     The IDD prefix to call the city from another country. |
-| area_code        |     A varying length number assigned to geographic areas for calls between cities([223 countries supported](https://www.ip2location.com/area-code-coverage) ). |
-| weather_station_code | The special code to identify the nearest weather observation station. |
-| weather_station_name | The name of the nearest weather observation station. |
-| mcc              |     Mobile Country Codes (MCC) as defined in ITU E.212 for use in identifying mobile stations in wireless telephone networks, particularly GSM and UMTS networks. |
-| mnc              |     Mobile Network Code (MNC) is used in combination with a Mobile Country Code(MCC) to uniquely identify a mobile phone operator or carrier. |
-| mobile_brand     |     Commercial brand associated with the mobile carrier. You may click [mobile carrier coverage](https://www.ip2location.com/mobile-carrier-coverage) to view the coverage report. |
-| elevation        |     Average height of city above sea level in meters (m). |
-| usage_type       |     Usage type classification of ISP or company. |
-| address_type     |     IP address types as defined in Internet Protocol version 4 (IPv4) and Internet Protocol version 6 (IPv6). |
-| category         |     The domain category code based on [IAB Tech Lab Content Taxonomy](https://www.ip2location.com/free/iab-categories). |
-| category_name    |     The domain category based on [IAB Tech Lab Content Taxonomy](https://www.ip2location.com/free/iab-categories). |
-| credits_consumed |     Credits needed to perform geolocation lookup. |
-```
-
-```{py:function} getcredit()
-Check the remaining credit of the web service account.
-:return: Returns the remaining credit of the web service account.
-:rtype: int
-```
-
-
 ## IP2LocationIPTools Class
 
 ```{py:class} IP2LocationIPTools()
