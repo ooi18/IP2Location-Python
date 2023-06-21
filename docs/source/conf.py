@@ -27,10 +27,10 @@ extensions = [
 myst_enable_extensions = [
     # "amsmath",
     # "attrs_inline",
-    # "colon_fence",
+    "colon_fence",
     "deflist",
     # "dollarmath",
-    # "fieldlist",
+    "fieldlist",
     # "html_admonition",
     # "html_image",
     # "linkify",
@@ -62,6 +62,12 @@ templates_path = ['_templates']
 html_theme = 'sphinx_pdj_theme'
 html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
 
+# PDJ theme options
+html_theme_options = {
+    # Hide the name of the project above the search bar
+    'home_link': 'hide'
+}
+
 '''
 # Material theme options (see theme.conf for more information)
 html_theme_options = {
@@ -86,9 +92,9 @@ html_theme_options = {
     'repo_name': 'Project',
 
     # Visible levels of the global TOC; -1 means unlimited
-    'globaltoc_depth': 3,
+    # 'globaltoc_depth': 3,
     # If False, expand all TOC entries
-    'globaltoc_collapse': False,
+    # 'globaltoc_collapse': False,
     # If True, show hidden TOC entries
     'globaltoc_includehidden': False,
 }'''
@@ -96,5 +102,7 @@ html_theme_options = {
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 html_logo = 'images/ipl-logo-square-1200.png'
+
+html_favicon = 'images/favicon.ico'
 
 html_title = "IP2Location Python"

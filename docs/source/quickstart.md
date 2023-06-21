@@ -9,12 +9,14 @@ download the BIN data file at
 -   IP2Location Commercial BIN Data (Comprehensive):
     <https://www.ip2location.com>
 
+:::{note}
 An outdated BIN database was provided in the databases folder for your
 testing. You are recommended to visit the above links to download the
 latest BIN database.
 
 You can also sign up for IP2Location Web Service to lookup by
 IP2Location API.
+:::
 
 ## Requirements
 
@@ -22,13 +24,13 @@ IP2Location API.
 
 ## Installation
 
+### Manual Installation
+
 1.  Unzip the package.
 2.  Execute python setup.py build
 3.  Execute python setup.py install
 
-or
-
-To install this module type the following (for PyPI):
+### Installation using PyPI.
 
 ``` bash
 pip install IP2Location
