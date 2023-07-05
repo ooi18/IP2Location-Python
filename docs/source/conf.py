@@ -49,7 +49,7 @@ intersphinx_disabled_domains = ['std']
 
 # autosummary_generate = True  # Turn on sphinx.ext.autosummary
 
-templates_path = ['_templates']
+# templates_path = ['_templates']
 
 # -- Options for HTML output
 
@@ -60,7 +60,7 @@ templates_path = ['_templates']
 # html_theme = 'furo'
 # html_theme = 'renku'
 html_theme = 'sphinx_pdj_theme'
-html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
+# html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
 
 # PDJ theme options
 html_theme_options = {
